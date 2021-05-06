@@ -1,1 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+nav .logo {
+  width: 15%;
+  min-width: 100px;
+}
+nav .menu {
+  width: 85%;
+}
+nav .menu .menu_tendina {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .menu .menu_tendina li {
+  list-style-type: none;
+  padding-right: 15px;
+}
+nav .menu .menu_tendina li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+nav .menu .menu_tendina li button {
+  padding: 10px;
+}
+nav .menu .menu_tendina li button img {
+  width: 20px;
+  vertical-align: middle;
+}
+nav .burger_menu {
+  font-size: 23px;
+  display: none;
+}
+
+.jumbotron {
+  padding: 30px 0;
+  display: flex;
+}
+.jumbotron .motto-jumbotron {
+  width: 50%;
+}
+.jumbotron .motto-jumbotron h1 {
+  padding-bottom: 10px;
+}
+.jumbotron .sfondo-jumbotron {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  nav .burger_menu {
+    display: block;
+  }
+}
