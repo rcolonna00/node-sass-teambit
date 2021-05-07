@@ -10,6 +10,10 @@
   margin: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -43,7 +47,6 @@ nav .menu .menu_tendina li {
   padding-right: 15px;
 }
 nav .menu .menu_tendina li a {
-  text-decoration: none;
   color: black;
   font-weight: 600;
 }
@@ -64,6 +67,7 @@ nav .burger_menu {
 .jumbotron {
   padding: 30px 0;
   display: flex;
+  flex-wrap: wrap;
 }
 .jumbotron .motto-jumbotron {
   width: 50%;
@@ -106,6 +110,14 @@ nav .burger_menu {
   nav .burger_menu {
     display: block;
   }
+
+  .jumbotron .motto-jumbotron {
+    width: 100%;
+  }
+
+  .jumbotron .sfondo-jumbotron {
+    width: 100%;
+  }
 }
 main #scopo {
   background-color: #ffe7d2;
@@ -137,11 +149,22 @@ main #scopo .scopo-bottom {
   margin: auto;
   width: 33.3333333333%;
   text-align: center;
+  margin-bottom: 10%;
 }
 main #scopo .border-top {
   padding-top: 10%;
   border-top: 1px solid black;
-  margin-top: 10%;
+}
+main #attivita {
+  padding: 30px 0;
+}
+main #attivita .attivita-screen {
+  width: calc( 100% / 2 );
+  float: left;
+}
+main #attivita .attivita-text {
+  width: calc( ( 100% / 2 ) / 2);
+  float: left;
 }
 
 @media (max-width: 768px) {

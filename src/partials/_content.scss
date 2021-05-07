@@ -33,13 +33,27 @@ main{
             margin: auto;
             width: ( 100% / 3 );
             text-align: center;
+            margin-bottom: 10%;
 
         }
 
         .border-top{
             padding-top: 10%;
             border-top: 1px solid black;
-            margin-top: 10%;
+        }
+    }
+
+    #attivita{
+        padding: 30px 0;
+
+        .attivita-screen{
+            width: calc( 100% / 2 );
+            float: left;
+        }
+        
+        .attivita-text{
+            width: calc( ( 100% / 2 ) / 2);
+            float: left;
         }
     }
 }
