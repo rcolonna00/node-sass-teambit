@@ -14,6 +14,10 @@ img {
   width: 100%;
 }
 
+.align-center {
+  text-align: center;
+}
+
 nav {
   padding: 10px 0;
   display: flex;
@@ -101,5 +105,59 @@ nav .burger_menu {
 
   nav .burger_menu {
     display: block;
+  }
+}
+main #scopo {
+  background-color: #ffe7d2;
+  padding: 30px 0;
+}
+main #scopo .scopo-center {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+main #scopo .scopo-center .left,
+main #scopo .scopo-center .center,
+main #scopo .scopo-center .right {
+  width: 33.3333333333%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+main #scopo .scopo-center .left img,
+main #scopo .scopo-center .center img,
+main #scopo .scopo-center .right img {
+  max-width: 60%;
+  padding-bottom: 10px;
+  min-height: 152px;
+}
+main #scopo .scopo-center .scalata img {
+  width: 15%;
+}
+main #scopo .scopo-bottom {
+  margin: auto;
+  width: 33.3333333333%;
+  text-align: center;
+}
+main #scopo .border-top {
+  padding-top: 10%;
+  border-top: 1px solid black;
+  margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+  main #scopo .scopo-center {
+    flex-wrap: wrap;
+  }
+  main #scopo .scopo-center .left,
+main #scopo .scopo-center .center,
+main #scopo .scopo-center .right {
+    width: 100%;
+    padding: 15px 0;
+  }
+  main #scopo .scopo-center .left img,
+main #scopo .scopo-center .center img,
+main #scopo .scopo-center .right img {
+    max-width: 30%;
+    height: auto;
   }
 }
