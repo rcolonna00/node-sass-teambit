@@ -3,3 +3,30 @@
     display: -webkit-flex;
     display: flex;
 }
+
+@mixin small-logo-button {
+    width: 20px;
+    vertical-align: middle;
+}
+
+@mixin my-container-button-blue {
+    @include my-display-flex;
+    padding: 45px 0 15px 0;
+    
+    .button-blue{
+        background-color: $color-background-button;
+        padding: 5px;
+        border: none;
+        margin: 0 2px;
+        border-radius: 5px;
+        cursor: pointer;
+
+        img{
+            @include small-logo-button;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
