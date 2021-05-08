@@ -1,0 +1,57 @@
+footer{
+    padding: 30px;
+    
+    .container{
+        @include my-display-flex;
+
+        .logo-footer{
+            width: 25%;
+
+            img{
+                width: 50px;
+                float: left;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .text-logo-footer{
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+        .menu-footer{
+            width: 75%;
+            @include my-display-flex;
+            justify-content: space-around;
+            ul{
+                .title-menu-footer{
+                    font-weight: 800;
+                    font-size: larger;
+                    padding-bottom: 15px;
+                }
+                li{
+                    list-style-type: none;
+                    padding-bottom: 10px;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
+
+@media ( max-width: $tablet-width ) {
+
+    footer{        
+        .container{
+            flex-wrap: wrap;
+            .logo-footer{
+                width: 50%;
+                margin: auto;
+                padding-bottom: 20px;
+            }
+            .menu-footer{
+                width: 100%;
+            }
+        }
+    }
+    
+}
